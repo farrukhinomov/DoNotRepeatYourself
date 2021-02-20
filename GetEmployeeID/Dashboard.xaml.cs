@@ -27,7 +27,8 @@ namespace GetEmployeeID
 
         private void generateEmployeeIDButton_Click(object sender, RoutedEventArgs e)
         {
-
+            string employeeId = $@"{firstNameTextBox.Text.Substring(0, 4)}{lastNameTextBox.Text.Substring(0, 4)}{DateTime.Now.Millisecond}";
+            employeeIDTextBox.Text = employeeId;
         }
     }
 }
