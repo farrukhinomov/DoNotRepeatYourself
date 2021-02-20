@@ -27,13 +27,12 @@ namespace GetEmployeeID
 
         private void generateEmployeeIDButton_Click(object sender, RoutedEventArgs e)
         {
-            generateEmployeeID();
+            employeeIDTextBox.Text = generateEmployeeID(firstNameTextBox.Text, lastNameTextBox.Text);
         }
 
-        private void generateEmployeeID()
+        private string generateEmployeeID(string firstName, string lastName)
         {
-            string employeeId = $@"{firstNameTextBox.Text.Substring(0, 4)}{lastNameTextBox.Text.Substring(0, 4)}{DateTime.Now.Millisecond}";
-            employeeIDTextBox.Text = employeeId;
+            return $@"{firstName.Substring(0, 4)}{lastName.Substring(0, 4)}{DateTime.Now.Millisecond}";
         }
     }
 }
