@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DRYDemoLibrary
+namespace DRYDemoStandartLibrary
 {
     public class EmployeeProcessor
     {
@@ -19,10 +19,8 @@ namespace DRYDemoLibrary
             }
             else
             {
-                do
-                {
+                while (output.Length < 4)
                     output += "X";
-                } while (output.Length < 4);
             }
 
             return output;

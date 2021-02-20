@@ -1,7 +1,7 @@
 ﻿using DRYDemoStandartLibrary;
 using Xunit;
 
-namespace DRYDemoLibraryTest
+namespace DRYDemoStandartLibraryTest
 {
     public class EmployeeProcessorTest
     {

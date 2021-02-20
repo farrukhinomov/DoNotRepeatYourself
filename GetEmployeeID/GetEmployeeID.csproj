@@ -95,9 +95,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DRYDemoLibrary\DRYDemoLibrary.csproj">
-      <Project>{56012ac0-674b-49ac-9e1e-23de3dffa6a0}</Project>
-      <Name>DRYDemoLibrary</Name>
+    <ProjectReference Include="..\DRYDemoStandartLibrary\DRYDemoStandartLibrary.csproj">
+      <Project>{7756166f-0499-4484-b7e2-036d9ea391cd}</Project>
+      <Name>DRYDemoStandartLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
