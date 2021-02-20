@@ -12,8 +12,8 @@ namespace DRYDemoLibraryTest
     {
         [Theory]
         [InlineData("Farrukh", "Inomov", "FarrInom")]
-        [InlineData("Far", "Ino", "FarIno")]
-        [InlineData("Ann", "King", "AnnKing")]
+        [InlineData("Far", "Ino", "FarXInoX")]
+        [InlineData("Ann", "King", "AnnXKing")]
         public void GenerateEmployeeID_ShouldCalculate(string firstName, string lastName, string expectedStart)
         {
             // Arrange
