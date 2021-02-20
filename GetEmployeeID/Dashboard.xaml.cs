@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DRYDemoLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,12 +28,8 @@ namespace GetEmployeeID
 
         private void generateEmployeeIDButton_Click(object sender, RoutedEventArgs e)
         {
-            employeeIDTextBox.Text = generateEmployeeID(firstNameTextBox.Text, lastNameTextBox.Text);
-        }
-
-        private string generateEmployeeID(string firstName, string lastName)
-        {
-            return $@"{firstName.Substring(0, 4)}{lastName.Substring(0, 4)}{DateTime.Now.Millisecond}";
+            EmployeeProcessor processor = new EmployeeProcessor();
+            employeeIDTextBox.Text = processor.GenerateEmployeeID(firstNameTextBox.Text, lastNameTextBox.Text);
         }
     }
 }
